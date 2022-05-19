@@ -125,7 +125,6 @@ a {
     }
     .logo {
         margin-bottom: 30px;
-        margin-left: 20px;
     }
     .header-text {
         font-size: 20px;
@@ -174,13 +173,8 @@ a {
 .form {
     padding: 50px 0;
 }
-.form {
-    background-image: url(../img/phone.png);
-    object-fit: scale-down;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+.form-image {
+    margin-top: -50px;
 }
 .form-bg {
     max-width: 550px;
