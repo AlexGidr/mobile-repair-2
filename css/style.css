@@ -21,7 +21,7 @@ header {}
 
 }
 
-.serve,
+.price-table,
 .carousell {
     background: rgb(244, 244, 252);
     padding: 10px;
@@ -136,7 +136,7 @@ a {
 
 /* кнопка завершается */
 /* Медиа начало */
-@media (min-width: 576px, max-width: 700px) {
+@media (min-width: 576px, max-width: 770px) {
 
     .container,
     .container-sm,
@@ -215,6 +215,7 @@ a {
 
 .form {
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .form-image {
@@ -318,6 +319,7 @@ form input[type="text"] {
 
 /* медиа начало */
 @media (max-width: 576px) {
+
     .logo {
         margin-left: 30px;
     }
@@ -348,6 +350,10 @@ form input[type="text"] {
         display: inline-block;
         margin-bottom: 20px;
         margin-left: -10px;
+    }
+    /* таблица */
+    .price-table-hidden {
+        display: none;
     }
 
     .form-control {
@@ -442,7 +448,11 @@ form input[type="text"] {
     }
 
 }
-
+@media (max-width: 960px) {
+    .form-image  {
+        display: none;
+    }
+}
 @media (min-width: 570px) {
 
     .form h2,
@@ -457,21 +467,6 @@ form input[type="text"] {
 
 /* медиа конец */
 
-/* услуги */
-.card {
-    margin: 20px 0px 60px 20px;
-    border: 1px solid white;
-    box-shadow: 0 0 3px grey;
-}
-
-.card-body {
-    padding-right: 10px;
-    ;
-}
-
-.serve h2 {
-    margin-top: 20px;
-}
 
 /* steps */
 
