@@ -1,10 +1,17 @@
-ul,li,a {
+ul,
+li,
+a {
     text-decoration: none;
     list-style: none;
 }
-/* Header */
-header {
+
+h1 {
+    font-weight: 700;
 }
+
+/* Header */
+header {}
+
 .header {
     padding: 40px 0 30px 0;
     top: 0px;
@@ -13,13 +20,19 @@ header {
     overflow: hidden;
 
 }
- .serve, .carousell  {
+
+.serve,
+.carousell {
     background: rgb(244, 244, 252);
     padding: 10px;
 
 }
-.form-wrapper, .header, .steps, .footer {
-    background: linear-gradient(90deg,#e9e8d0,#84cfba,#50cee4);
+
+.form-wrapper,
+.header,
+.steps,
+.footer {
+    background: linear-gradient(90deg, #e9e8d0, #84cfba, #50cee4);
 }
 
 a {
@@ -27,10 +40,12 @@ a {
     font-style: normal;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-  }
+}
+
 .btn {
     background-color: blue;
 }
+
 .header-btn {
     border: 1px solid black;
     padding: 10px 30px 10px 20px;
@@ -42,42 +57,53 @@ a {
     margin-left: 36px;
     background-color: #fff;
 }
+
 .header-btn:hover {
     background-color: red;
     color: aliceblue;
 }
+
 .header-phone {
     display: block;
     font-size: 24px;
     font-weight: 400;
-    line-height: 20px;    
+    line-height: 20px;
 }
+
 /* Кнопка */
 .whatsapp-button {
     position: fixed;
     right: 10%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-    background: #25D366; /*цвет кнопки*/
+    background: #25D366;
+    /*цвет кнопки*/
     border-radius: 50%;
-    width: 55px; /*ширина кнопки*/
-    height: 55px; /*высота кнопки*/
+    width: 55px;
+    /*ширина кнопки*/
+    height: 55px;
+    /*высота кнопки*/
     color: #fff;
     text-align: center;
-    line-height: 53px; /*центровка иконки в кнопке*/
-    font-size: 35px; /*размер иконки*/
+    line-height: 53px;
+    /*центровка иконки в кнопке*/
+    font-size: 35px;
+    /*размер иконки*/
     z-index: 9999;
 }
+
 .whatsapp-button a {
     color: #fff;
 }
+
 .whatsapp-button:before,
 .whatsapp-button:after {
     content: " ";
     display: block;
     position: absolute;
     border: 50%;
-    border: 1px solid #cd25d3; /*цвет анимированных волн от кнопки*/
+    border: 1px solid #cd25d3;
+    /*цвет анимированных волн от кнопки*/
     left: -20px;
     right: -20px;
     top: -20px;
@@ -85,35 +111,37 @@ a {
     border-radius: 50%;
     animation: animate 1.5s linear infinite;
     opacity: 0;
-    backface-visibility: hidden; 
+    backface-visibility: hidden;
 }
- 
-.whatsapp-button:after{
+
+.whatsapp-button:after {
     animation-delay: .5s;
 }
- 
-@keyframes animate
-{
-    0%
-    {
+
+@keyframes animate {
+    0% {
         transform: scale(0.5);
         opacity: 0;
     }
-    50%
-    {
+
+    50% {
         opacity: 1;
     }
-    100%
-    {
+
+    100% {
         transform: scale(1.2);
         opacity: 0;
     }
 }
+
 /* кнопка завершается */
 /* Медиа начало */
-@media (min-width: 576px, max-width: 700px ) {
-    .container, .container-sm, .form {
-         max-width:none; 
+@media (min-width: 576px, max-width: 700px) {
+
+    .container,
+    .container-sm,
+    .form {
+        max-width: none;
     }
 
 
@@ -121,14 +149,24 @@ a {
 
 @media (max-width: 540px) {
     .header-list-call {
-        padding-left: 20%;
+        text-align: center;
+        display: inline;
+        width: 100%;
     }
+    .header {
+        margin-bottom: -20px;
+    }
+
     .logo {
         margin-bottom: 30px;
     }
+
+    .header-phone {}
+
     .header-text {
         font-size: 20px;
     }
+
     .whatsapp-button {
         position: fixed;
         right: 0px;
@@ -141,18 +179,21 @@ a {
     text-align: center;
 
 }
+
 .header-text {
     line-height: 1.2;
     max-width: 200px;
     font-weight: 700;
     text-align: left;
 }
+
 .header-menu-size {
     position: relative;
     width: 210px;
-    background: linear-gradient(90deg,#e9e8d0,#90d1bf,#50cee4);
+    background: linear-gradient(90deg, #e9e8d0, #90d1bf, #50cee4);
     cursor: pointer;
 }
+
 .header-menu-size:after {
     width: 210px;
 
@@ -163,58 +204,56 @@ a {
     border: 1px solid grey;
     background: black;
 }
-.header-menu-size {
-}
+
+.header-menu-size {}
+
 .header-list-call {
     display: inline-block;
 }
+
 /* Форма */
 
 .form {
     padding: 50px 0;
 }
+
 .form-image {
     margin-top: -50px;
 }
+
 .form-bg {
     max-width: 550px;
 }
+
 .phone {
     display: block;
     margin-bottom: -30px;
 }
-.form-list {
-    text-align: left;
-    padding-left: 30%;
-    line-height: 1.5;
-    margin-left: -10px;
-    font-style: italic;
-    font-weight: 700;
-}
-.form-list p {
-    font-size: 20px;
-    text-align: left;
-}
-.form h2 {
-    text-align: center;
-}
+
+
+
 .form-send {
     margin-left: 90px;
 }
+
 .form-control {
     width: 40%;
     margin-left: 180px;
     margin-bottom: 30px;
 }
-.form-items {
+
+.form-list {
     text-align: left;
-    padding-left: 30%;
+    margin-left: -30px;
 }
+
 .form-item {
     font-size: 22px;
     font-weight: 400;
+    margin-bottom: 20px;
     position: relative;
 }
+
 .form-item::before {
     content: '';
     background-color: red;
@@ -224,6 +263,7 @@ a {
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .form-item::after {
     position: absolute;
     content: '';
@@ -235,27 +275,44 @@ a {
     left: 5px;
     top: 15px;
 }
+
 form input[type="submit"] {
-    background-color: rgb(248, 115, 7);
+    background-color: rgb(248, 16, 16);
     border: none;
     color: white;
     border-radius: 5px;
-   } 
-   form input[type="submit"]:hover {
-    background-color: rgb(248, 155, 79);
+    width: 150px;
+    height: 46px;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(252, 89, 89);
     color: rgb(15, 8, 8);
     border: 1px solid rgb(22, 183, 189);
-   }
+}
+
 form input[type="text"] {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid wheat;
+    width: 300px;
+    text-align: left;
 }
+
 .phone {
     display: none;
 }
+
 .g-3 {
     margin-right: -150px;
+    display: flex;
+    justify-content: left;
+    align-content: space-between;
+}
+
+.g-3 input[type="text"] {
+    margin-right: 20px;
+    padding: 10px;
 }
 
 
@@ -264,68 +321,140 @@ form input[type="text"] {
     .logo {
         margin-left: 30px;
     }
+    h1 {
+        margin-bottom: 30px;
+    }
     .header-text {
         min-width: 330px;
     }
+
+    .header {
+        text-align: left;
+    }
+
+    .header-first {
+        display: none;
+    }
+
+    .header-third {
+        display: none;
+    }
+
     .form-send {
         margin-left: 5px;
     }
+
     .phone {
         display: inline-block;
-       margin-bottom: 20px;
-       margin-left: -10px;
+        margin-bottom: 20px;
+        margin-left: -10px;
     }
+
     .form-control {
         width: 80%;
         margin-left: 30px;
         margin-bottom: 30px;
     }
-    .form h2, .form h3, .form p, .form li {
+
+    .form h2,
+    .form h3,
+    .form p,
+    .form li {
         color: black;
 
     }
+
+    .form h2 {
+        font-size: 22px;
+        max-width: 250px;
+        text-align: center;
+    }
+
     .form-bg {
         margin-bottom: 10px;
     }
-    .form h2, .form h3, .form p, .form li {
+
+    .form h2,
+    .form h3,
+    .form p,
+    .form li {
         color: black;
 
     }
+
+    .form-item::before {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
     .form {
         background-image: none;
-
+        padding-top: 0px;
     }
+
     .w-100 {
         margin-top: 20%;
     }
-.form-list, .form-items {
-    margin-left: -50px;
 
-}   
-    .form-list p {
-        max-width: 260px;
+    .form-bg {
+        text-align: center;
+
     }
-    
+
+    .form-list {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .form-item {
+        max-width: 170px;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .form-item::after {
+        position: absolute;
+
+        left: 83px;
+        top: 5px;
+    }
+
     .g-3 {
         margin-right: 0;
+        display: flex;
     }
+
     .header-text {
         line-height: 1.2;
         font-weight: 700;
         text-align: center;
     }
+
     .form-select {
         max-width: 100%;
     }
 
-}
-@media (min-width: 770px) {
-
-    .form h2, .form h3, {
-        padding-left: 20%;
-
+    .form-image {
+        display: none;
     }
+
 }
+
+@media (min-width: 570px) {
+
+    .form h2,
+    .form h3,
+    {
+    padding-left: 20%;
+
+}
+
+
+}
+
 /* медиа конец */
 
 /* услуги */
@@ -334,9 +463,12 @@ form input[type="text"] {
     border: 1px solid white;
     box-shadow: 0 0 3px grey;
 }
+
 .card-body {
-    padding-right: 10px;;
+    padding-right: 10px;
+    ;
 }
+
 .serve h2 {
     margin-top: 20px;
 }
@@ -347,9 +479,11 @@ form input[type="text"] {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .steps p {
     text-align: center;
 }
+
 .steps-item {
     display: block;
     margin-left: auto;
@@ -357,9 +491,10 @@ form input[type="text"] {
 }
 
 /* Карусель */
-.carousel-item{
+.carousel-item {
     min-height: 280px;
 }
+
 /* footer */
 .footer-text {
     font-size: 20px;
