@@ -135,44 +135,7 @@ a {
 }
 
 /* кнопка завершается */
-/* Медиа начало */
-@media (min-width: 576px, max-width: 770px) {
 
-    .container,
-    .container-sm,
-    .form {
-        max-width: none;
-    }
-
-
-}
-
-@media (max-width: 540px) {
-    .header-list-call {
-        text-align: center;
-        display: inline;
-        width: 100%;
-    }
-    .header {
-        margin-bottom: -20px;
-    }
-
-    .logo {
-        margin-bottom: 30px;
-    }
-
-    .header-phone {}
-
-    .header-text {
-        font-size: 20px;
-    }
-
-    .whatsapp-button {
-        position: fixed;
-        right: 0px;
-        bottom: 520px;
-    }
-}
 
 /* медиа конец */
 .header-align {
@@ -317,7 +280,48 @@ form input[type="text"] {
 }
 
 
-/* медиа начало */
+/* Медиа начало */
+@media ( max-width: 380px) {
+    .form-list {margin-left: 30px;}
+}
+
+@media (min-width: 576px, max-width: 770px) {
+
+    .container,
+    .container-sm,
+    .form {
+        max-width: none;
+    }
+
+
+}
+
+@media (max-width: 540px) {
+    .header-list-call a,p {
+        display: none;
+
+    }
+    .header {
+        margin-bottom: -20px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .header-phone {
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        right: 0px;
+        bottom: 520px;
+    }
+}
 @media (max-width: 576px) {
 
     .logo {
@@ -331,6 +335,7 @@ form input[type="text"] {
     }
 
     .header {
+        padding-top: 10px;
         text-align: left;
     }
 
@@ -354,6 +359,9 @@ form input[type="text"] {
     /* таблица */
     .price-table-hidden {
         display: none;
+    }
+    .price-table  {
+        margin-left: -10px;
     }
 
     .form-control {
@@ -417,8 +425,12 @@ form input[type="text"] {
 
     .form-item {
         max-width: 170px;
-        text-align: center;
+        margin-right: 10px;
+        text-align: left;
         text-transform: none;
+    }
+    .form-item:last-child {
+        margin-right: 0px;
     }
 
     .form-item::after {
