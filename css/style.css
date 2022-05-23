@@ -315,7 +315,6 @@ form input[type="text"] {
 }
 /* карты */
 .cards {
-    padding-top: 20px;
     padding-left: 70px;
 }
 .card {
@@ -330,6 +329,7 @@ form input[type="text"] {
     .cards > .container > .row > h2 {
         margin-left: -50px;
     }
+
 }
 /* Медиа начало */
 @media ( max-width: 380px) {
