@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 header-first">
-                    <img src="img/logo.png" alt="logo" class="logo" width="300" height="50"
+                    <img src="img/rocket.png" alt="logo" class="logo" width="300" height="100"
                         style="object-fit: scale-down">
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 text-center header-third">
@@ -33,7 +33,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
                     <div class="row header-list-call">
                         <a href="tel:+79999999999" class="header-phone">+7 (999) 234-59-93</a>
-                        <p>Режим работы: c 9:00 по 22:00</p>
+                        <p class="header-text-disabled">Режим работы: c 9:00 по 22:00</p>
                     </div>
 
                 </div>
@@ -52,12 +52,13 @@
             <div class="container">
                 <div class="row text-left">
                     <div class="col-xl-6  col-md-6 col-sm-5 form-bg text-uppercase">
+                        
                         <h1>Сервисный центр
-                            по ремонту смартфонов</h1>
+                            по ремонту смартфонов и продаже аксессуаров</h1>
                         <ul class="form-list">
-                            <li class="form-item">Ремонт за 90 минут</li>
-                            <li class="form-item">Гарантия до 3-х лет</li>
-                            <li class="form-item">Скидка 30% при заказе на сайте</li>
+                            <li class="form-item">Ремонт быстро и качественно</li>
+                            <li class="form-item">Покупая товары на 3000р = <span class="extra-text">Подарок</span></li>
+                            <li class="form-item">Скидки и подарки постоянным покупателям</li>
                             <li class="form-item">Бесплатный выезд курьера</li>
                         </ul>
                         <form action="send.php" method="post" class="g-3">                            
@@ -75,60 +76,9 @@
 
 
     </section>
-    <!-- Таблица -->
-    <section class="price-table">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <table class="table table-hover table-sm">
-                        <thead>
-                          <tr class="table-primary">
-                            <th scope="col">№</th>
-                            <th scope="col">Вид работы</th>
-                            <th scope="col">Стоимость, руб</th>
-                            <th class="price-table-hidden" scope="col">Примечание</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Диагностика</td>
-                            <td>от 150 до 200</td>
-                            <td class="price-table-hidden">...</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Диагностика Apple</td>
-                            <td>от 400</td>
-                            <td class="price-table-hidden">...</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Замена дисплея</td>
-                            <td>от 800</td>
-                            <td class="price-table-hidden">...</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td >Замена микрофона</td>
-                            <td>от 500</td>
-                            <td class="price-table-hidden">...</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">5</th>
-                            <td>Разборка/сборка телефона</td>
-                            <td>от 350</td>
-                            <td class="price-table-hidden">...</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <!-- Шаги -->
-    <section class="steps">
+    
+    <!-- <section class="steps">
 
         <div class="container">
             <div class="row">
@@ -152,57 +102,165 @@
             </div>
 
         </div>
+    </section> -->
+ 
+    <!-- Таблица -->
+    <section class="price-table bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center">Цена услуг</h3>
+                    <table class="table table-hover table-sm ">
+                        <thead>
+                          <tr class="table-primary">
+                            <th scope="col">№</th>
+                            <th scope="col">Вид работы</th>
+                            <th scope="col">Стоимость, руб</th>
+                            <th class="price-table-hidden" scope="col">Примечание</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Диагностика</td>
+                            <td>Бесплатно</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Диагностика Apple</td>
+                            <td class>Бесплатно</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Замена дисплея</td>
+                            <td>от 3000</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td >Замена батареи</td>
+                            <td>от 1500</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Замена динамика</td>
+                            <td>от 1500</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Замена пленки защитной и стекла</td>
+                            <td>от 300</td>
+                            <td class="price-table-hidden">...</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="carousell">
-        <div class="container-lg my-3">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                </ol>
-                
-                <!-- Wrapper for carousel items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/review.jpg" class="d-block w-100" alt="Slide 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            
-                            <h5>First slide label</h5>
-                            <p>Some demonstrative placeholder content for the first slide.</p>
+    <!-- карточки -->
+    <section class="cards">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">Услуги</h2>
+                <div class="row">
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/diagnostic.jpg" class="card-img-top rounded" alt="diagnostic" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Диагностика</h5>
+                            <p class="card-text">Выявляем неполадки и повреждения устройства</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/review2.jpg" class="d-block w-100" alt="Slide 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some demonstrative placeholder content for the second slide.</p>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/edit-iphone.jpg" class="card-img-top rounded" alt="repair" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Настройка</h5>
+                            <p class="card-text">Настройка телефона и приложений.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/workers.png" class="d-block w-100" alt="Slide 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some demonstrative placeholder content for the third slide.</p>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/accum.webp" class="card-img-top rounded" alt="chat" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Замена батареи</h5>
+                            <p class="card-text">Быстрая и качественная замена батареи.</p>
+                        </div>
+                    </div>
+                    <div class="card text-black bg-light  mb-3" style="width: 18rem;">
+                        <img src="img/display.webp" class="card-img-top rounded" alt="computer" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Замена дисплея</h5>
+                            <p class="card-text">Оригинальные запчасти для замены дисплея.</p>
+                        </div>
+                    </div>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/eyerphone.jpg" class="card-img-top rounded" alt="diagnostic" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Продажа наушников</h5>
+                            <p class="card-text">Большой выбор наушники и гарнитуры.</p>
+                        </div>
+                    </div>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/phones.jfif" class="card-img-top rounded" alt="repair" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Смартфоны и кнопочные телефоны</h5>
+                            <p class="card-text">Большой выбор кнопочных телефонов.</p>
+                        </div>
+                    </div>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/orig.webp" class="card-img-top rounded" alt="chat" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Аксессуары</h5>
+                            <p class="card-text">Аксессуары по выгодным ценам.</p>
+                        </div>
+                    </div>
+                    <div class="card text-black bg-light mb-3" style="width: 18rem;">
+                        <img src="img/wrapper.jpg.crdownload" class="card-img-top rounded" alt="computer" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title">Чехлы для телефонов</h5>
+                            <p class="card-text">Выгодные цена на чехлы для телефонов</p>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Carousel controls -->
-                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
             </div>
     </section>
+    <div class="maps">
+        <div class="container">
+            <div class="row">
+                <div class="maps-contacts bg-white ">
+                    <h2>КОНТАКТЫ</h2>
+                    <p class="fw-bold">Записаться на ремонт:</p>
+                    <p>+ 7 (966) 271-33-33</p>
+                    <p class="fw-bold">Адреса</p>
+                    <p>Юбилейный, 36</p>
+                    <p class="fw-bold">График работы:</p>
+                    <p>Пн-сб 10:00-21:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maps-disabled">
+        <div class="row">
+            <div class="maps-contacts-disabled bg-light">
+                <h2>КОНТАКТЫ</h2>
+                <p class="fw-bold">Записаться на ремонт:</p>
+                <p>+ 7 (966) 271-33-33</p>
+                <p class="fw-bold">Адреса:</p>
+                <p>Юбилейный, 36</p>
+                <p class="fw-bold">График работы:</p>
+                <p>Пн-сб 10:00-21:00</p>
+            </div>
+            <img src="./img/map-dis.png" class="maps-second-disabled" alt="map" >
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="footer-text text-center">Сделано для вас</p>
+                    <p class="footer-text text-center">Сервис по ремонту в Химках</p>
                 </div>
             </div>
         </div>
