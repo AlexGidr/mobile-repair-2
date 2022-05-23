@@ -1,3 +1,6 @@
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700;
+}
 ul,
 li,
 a {
@@ -21,20 +24,50 @@ header {}
 
 }
 
-.price-table,
+
 .carousell {
-    background: rgb(244, 244, 252);
     padding: 10px;
 
 }
 
+.cards,
 .form-wrapper,
 .header,
-.steps,
 .footer {
     background: linear-gradient(90deg, #e9e8d0, #84cfba, #50cee4);
 }
-
+.maps {
+    background-image: url(../img/map-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.maps-contacts {
+    max-width: 300px;
+    margin: 100px;
+    padding: 30px 0 30px 30px;
+}
+.maps-contacts-disabled {
+    display: none;
+}
+.maps-second-disabled {
+ display: none;       
+}
+@media ( max-width: 540px) {
+    .maps-second-disabled {
+        display: block;
+    }
+    .maps {
+      display: none;
+    }
+   
+    .maps-contacts-disabled {
+        display: block;
+        padding: 30px 0 15px 40px;
+        
+    }
+}
 a {
     color: #464646;
     font-style: normal;
@@ -247,10 +280,12 @@ form input[type="submit"] {
     border-radius: 5px;
     width: 150px;
     height: 46px;
+    font-weight: 900;
+
 }
 
 form input[type="submit"]:hover {
-    background-color: rgb(252, 89, 89);
+    background-color: rgb(238, 0, 0);
     color: rgb(15, 8, 8);
     border: 1px solid rgb(22, 183, 189);
 }
@@ -278,8 +313,26 @@ form input[type="text"] {
     margin-right: 20px;
     padding: 10px;
 }
+.extra-text {
+    background-color: red;
+}
+/* карты */
+.cards {
+    padding-left: 70px;
+}
+.card {
+    margin-right: 30px;
 
-
+}
+.card:last-child {
+    margin-right: 0px;
+}
+@media ( max-width: 540px ) {
+ 
+    .cards > .container > .row > h2 {
+        margin-left: -50px;
+    }
+}
 /* Медиа начало */
 @media ( max-width: 380px) {
     .form-list {margin-left: 30px;}
@@ -297,9 +350,12 @@ form input[type="text"] {
 }
 
 @media (max-width: 540px) {
-    .header-list-call a,p {
+    .header-list-call a {
         display: none;
 
+    }
+    .header-text-disabled {
+        display: none;
     }
     .header {
         margin-bottom: -20px;
@@ -406,6 +462,7 @@ form input[type="text"] {
     .form {
         background-image: none;
         padding-top: 0px;
+        padding-bottom: 10px;
     }
 
     .w-100 {
