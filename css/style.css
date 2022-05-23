@@ -24,12 +24,6 @@ header {}
 
 }
 
-
-.carousell {
-    padding: 10px;
-
-}
-
 .cards,
 .form-wrapper,
 .header,
@@ -554,10 +548,6 @@ form input[type="text"] {
     margin-right: auto;
 }
 
-/* Карусель */
-.carousel-item {
-    min-height: 280px;
-}
 
 /* footer */
 .footer-text {
