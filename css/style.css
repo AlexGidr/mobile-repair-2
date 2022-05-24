@@ -329,6 +329,9 @@ form input[type="text"] {
     .cards > .container > .row > h2 {
         margin-left: -50px;
     }
+    .card:last-child {
+    margin-bottom: 0px;
+    }
 
 }
 /* Медиа начало */
